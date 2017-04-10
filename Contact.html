@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link href="styles.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+  <script src="rabensportfolio/rabensPortfolio.js"> </script> <!-- added link to .js page-->
+</head>
+<body>
+   <div class="topnav" id="myTopnav">
+    <a href="HomePage.html">Home</a></li>
+    <a href="AboutNathanRabens.html">About</a></li>
+    <a href="Contact.html">Contact</a></li>
+  </div>
+  <h1>Contact</h1>
+  <h2>General Inquiries</h2>
+  <form>
+    <fieldset>
+      <legend>Basic Information:</legend>
+      <p><label>
+        Your Name:
+        <input type="text" name="name" size="30" maxlength="110"/>
+      </label></p>
+      <p><label>
+        Your Email:
+        <input type="email" name="email" size="30" maxlength="110"/>
+      </label></p>
+      <br />
+    </fieldset>
+    <br />
+    <fieldset>
+     <legend>Your Comments:</legend>
+     <p>
+       <label for="comments">
+         What would you like to ask Nathan Rabens?
+       </label>
+       <br />
+       <textarea rows="5" cols="50" id="comments">
+       </textarea>
+       <br />
+    <input type="submit" value="Submit" onclick="clickEvent();" id="btnclick"/>
+  </p>
+
+
+    <script>
+
+    function clickEvent() {
+      var userInput = document.getElementById('comments').value;
+      alert(userInput + '!!!!!');
+    };
+    </script>
+
+
+   </fieldset>
+ </form>
+</body>
+</html>
